@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./js/jquery-3.3.1.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/template-web.js"></script>
+    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&ak=PlhFWpA02aoURjAOpnWcRGqw7AI8EEyO">
+    </script>
+    <script src="./js/player.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="inner-header">
+            <div class="header-title">
+            Yuki 音乐
+            </div>
+            <div class="contact">
+                联系方式:tanqueray@foxmail.com
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <main>
+            <div class="left">
+                <div class="weather">
+                    <div class="weather-banner">
+                        <div class="weather-title">
+                            <span class="fa fa-sun-o">&nbsp;&nbsp;</span>天气预报
+                        </div>
+                    </div>
+                    <div class="weather-query">
+                        <label for="cityName">城市名称：</label>
+                        <input type="text" id="cityName" class="form-control city-name" required>
+                        <button id="weatherQuery">查询</button>
+                    </div>
+                    <div class="weather-display">
+                        <div class="city">您的城市：</div>
+                        <div class="showWeather">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="song">
+                    <div class="song-banner">
+                        <div class="song-title">
+                            <span class="fa fa-music">&nbsp;&nbsp;</span>音乐搜索
+                        </div>
+                    </div>
+                    <div class="song-query">
+                        <label for="songName">歌曲(歌手)名称：</label>
+                        <input type="text" id="songName" class="form-control song-name" required>
+                        <button id="songQuery">搜索</button>
+                    </div>
+                    <div class="songInfo">
+                        <div class="wrap-info">
+                            <div class="title">正在播放：</div>
+                            <div class="singer">歌手：</div>
+                            <div class="volume">
+                                <div class="icon-volume fa fa-volume-up"></div>
+                                
+                            </div>
+                        </div>
+                        <div class="cover">
+                            <img src="" alt="" class="cover-pic">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="wrap-right">
+                <div class="right">
+                    <div class="search-wrap">
+                        <div class="search-result">
+                            <div class="search-title">
+                                <div class="inner-search"><span class="fa fa-search"></span> 歌曲搜索结果
+                                </div>
+                            </div>
+                            <div class="search-body-wrap">
+                                <ul class="search-body">
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="playlist-wrap">
+                        <div class="playlist">
+                            <div class="playlist-title">
+                                <div class="inner-playlist"><span class="fa fa-list"></span> 播放列表
+                                </div>
+                            </div>
+                            <div class="playlist-body-wrap">
+                                <ul class="playlist-body">
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="music-controls">
+                        <div class="play-btn fa fa-play"></div>
+                        <div class="move-on fa fa-step-forward"></div>
+                        <div class="move-back fa fa-step-backward"></div>
+                        <div class="bar">
+                            <div class="allBar"></div>
+                            <div class="buffer"></div>
+                            <div class="currentBar">
+                                <div class="ball">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="repeat fa fa-repeat"></div>
+                        <div class="time">
+                            <span class="currentTime"></span>&nbsp;/&nbsp;<span class="duration"></span>
+                        </div>
+                        <audio src="" class="music-player"></audio>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+</body>
+
+</html>
