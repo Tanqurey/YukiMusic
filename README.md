@@ -1,6 +1,6 @@
 # YukiMusic
 
-> 基于JQuery的简易音乐播放器，是YukiMusic2.0的姐姐
+> 基于JQuery的简易音乐播放器
 
 ## 项目截图
 
